@@ -1,0 +1,45 @@
+import React from 'react';
+import Navbar from '../../Components/Navbar/Navbar';
+import Home from '../../Components/Home/Home';
+import Services from "../../Components/Services/Services"
+import AboutUs from '../../Components/AboutUs/AboutUs';
+import Gallery from "../../Components/Gallery/Gallery";
+import Videos from "../../Components/Videos/Videos";
+import Testimonials from "../../Components/Testimonials/Testimonials";
+import ContactUs from "../../Components/ContactUs/ContactUs"
+import Footer from '../../Components/Footer/Footer';
+
+const LandingPage = () => {
+  return (
+    <div>
+        
+      <Navbar />
+      <div id="home">
+        <Home />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="about">
+        <AboutUs />
+      </div>
+      <div id="gallery">
+        <Gallery />
+      </div>
+      <div id="videos">
+        <Videos />
+      </div>
+      <div id="testimonial">
+        <Testimonials />
+      </div>
+      <div id="contact">
+        <ContactUs />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
+    </div>
+  );
+}
+
+export default LandingPage;
