@@ -1,42 +1,104 @@
-import React from "react";
+import React, { useState } from "react";
+import Grid from "@mui/material/Grid";
+import ServiceCard from "../ServiceCard/ServiceCard";
+import "./Services.css";
+import computerHardwareImage from "../../Assets/ServiceImage/1Computerhardware.jpeg";
+import computerNetworkingImage from "../../Assets/ServiceImage/2Computernetworking.jpeg";
+import computerPeripheralImage from "../../Assets/ServiceImage/3ComputerPeripheral.jpeg";
+import computerPrinterImage from "../../Assets/ServiceImage/4computerprinter.jpeg";
+import computerServerImage from "../../Assets/ServiceImage/5computerserver.jpeg";
+import computerSoftwareImage from "../../Assets/ServiceImage/6Computersoftware.jpeg";
+import laptopAmcImage from "../../Assets/ServiceImage/7LaptopAMC.jpeg";
+import laptopAmcCorporateImage from "../../Assets/ServiceImage/8LaptopAMCforcorporate.jpeg";
+import keyboardMouseRepairImage from "../../Assets/ServiceImage/9Keyboardmouserepair.jpg";
+import networkingDevicesImage from "../../Assets/ServiceImage/10NetworkingDevices.jpg";
 
 const Services = () => {
+  const [services, setServices] = useState([
+    {
+      id: 1,
+      img: computerHardwareImage,
+      title: "Computer Hardware Amc",
+      description:
+        "Backed by a team of highly skilled staffs, we are able to render unmatched computer hardware AMC services.",
+    },
+    {
+      id: 2,
+      img: computerNetworkingImage,
+      title: "Computer Networking Amc",
+      description:
+        "We have a team of highly qualified & experienced staffs for offering best computer networking AMC services.",
+    },
+    {
+      id: 3,
+      img: computerPeripheralImage,
+      title: "Computer Peripheral Amc",
+      description:
+        "Backed by a team of highly experienced staffs, we are able to provide computer peripheral AMC services.",
+    },
+    {
+      id: 4,
+      img: computerPrinterImage,
+      title: "Computer Printer Amc",
+      description:
+        "Now get an Annual Maintenance Contract of your computer printer at our outlet for a very good price.",
+    },
+    {
+      id: 5,
+      img: computerServerImage,
+      title: "Computer Server Amc",
+      description:
+        "Backed by a team of highly experienced professionals, we are able to provide computer server AMC services.",
+    },
+    {
+      id: 6,
+      img: computerSoftwareImage,
+      title: "Computer Software Amc",
+      description:
+        "Backed by a team of highly experienced professionals, we are able to provide computer software AMC services.",
+    },
+    {
+      id: 7,
+      img: laptopAmcImage,
+      title: "Laptop Amc",
+      description:
+        "Repair and maintain your laptop and continue working with secured data. We offer AMC services.",
+    },
+    {
+      id: 8,
+      img: laptopAmcCorporateImage,
+      title: "Laptop Amc For Corporate",
+      description:
+        "We indulge in providing AMC Services for computers to our valued clients at very reasonable price.",
+    },
+    {
+      id: 9,
+      img: keyboardMouseRepairImage,
+      title: "Keyboard, Mouse Repairs",
+      description:
+        "We provide repairing services for all branded, non-branded keyboards and all types of mouse.",
+    },
+    {
+      id: 10,
+      img: networkingDevicesImage,
+      title: "Networking Devices",
+      description:
+        "We provide repairing services for all kinds of networking devices like modem, routers and cables.",
+    },
+  ]);
+
   return (
-    <div>
-      <h2>
-        Iron Man is a superhero appearing in American comic books published by
-        Marvel Comics. Co-created by writer and editor Stan Lee, developed by
-        scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby,
-        the character first appeared in Tales of Suspense #39 in 1963, and
-        received his own title with Iron Man #1 in 1968. Shortly after his
-        creation, Iron Man was a founding member of a superhero team, the
-        Avengers, with Thor, Ant-Man, Wasp and the Hulk. Iron Man stories,
-        individually and with the Avengers, have been published consistently
-        since the character's creation. Iron Man is the superhero persona of
-        Anthony Edward "Tony" Stark, a businessman and engineer who runs the
-        weapons manufacturer Stark Industries. When Stark is captured in a war
-        zone and sustains a serious heart wound, he builds his iconic Iron Man
-        armor out of scrap and escapes his captors. As a superhero, his armor
-        suits grant him superhuman strength, flight, energy projection, and
-        other abilities. The character was used to explore political themes, and
-        early Iron Man stories were set in the Cold War. Later stories explored
-        other themes, such as civil unrest, technological advancement, corporate
-        espionage, alcoholism, and governmental authority. Major Iron Man
-        stories include Demon in a Bottle (1979), Armor Wars (1987–1988),
-        Extremis (2005), and Iron Man 2020 (2020). He is also a leading
-        character in the company-wide stories Civil War (2006–2007), Dark Reign
-        (2008–2009), and Civil War II (2016). Iron Man's supporting cast has
-        produced additional superhero characters, including James Rhodes as War
-        Machine, Pepper Potts as Rescue, and Riri Williams as Ironheart as well
-        as reformed villains Black Widow and Hawkeye. Iron Man's list of enemies
-        includes his archenemy, the Mandarin, as well as many supervillains of
-        communist origin and many that double as business rivals for Tony.
-        Robert Downey Jr. portrayed Tony Stark in Iron Man (2008), the first
-        film of the Marvel Cinematic Universe, and continued to portray the
-        character until his final appearance in Avengers: Endgame (2019).
-        Downey's portrayal popularized the character, elevating Iron Man as one
-        of Marvel's most recognizable superheroes.
-      </h2>
+    <div className="servicecontainer">
+      <div className="wrapper">
+        <h1>Services</h1>
+        <Grid container spacing={2}>
+          {services.map((service) => (
+            <Grid item xs={7} sm={6} md={2.4} key={service.id}>
+              <ServiceCard service={service} />
+            </Grid>
+          ))}
+        </Grid>
+      </div>
     </div>
   );
 };

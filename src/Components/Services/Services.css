@@ -1,0 +1,28 @@
+.servicecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+   margin-left: 70px;
+   margin-right: 70px;
+   /* background-color: aqua; */
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .servicecontainer{
+        margin-left: 50px;
+   margin-right: 50px;
+    }
+}

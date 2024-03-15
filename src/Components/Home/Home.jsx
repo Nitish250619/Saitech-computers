@@ -1,13 +1,15 @@
 import React from "react";
 import "./Home.css"
+import CustomButton from "../CustomButton/CustomButton";
+
 
 const Home = () => {
   return (
     <div className="container">
-      <section>
-        <h5>gr</h5>
-        <h3>df</h3>
-        <button>cfgh</button>
+      <section className="hero">
+        <p>Established And Reputable</p>
+        <h1>Computer Peripheral Repairs</h1>
+        <CustomButton name={"Enquire Now"}/>
       </section>
     </div>
   );
