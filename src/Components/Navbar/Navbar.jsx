@@ -22,7 +22,6 @@ function NavBar() {
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
             <span>Saitech Computers</span>
-            {/* <i className="fas fa-code"></i> */}
             <span className="icon">{/* <CodeIcon /> */}</span>
           </NavLink>
 
@@ -111,8 +110,6 @@ function NavBar() {
               handleClick(null);
             }}
           >
-            {/* <i className={click ? "fas fa-times" : "fas fa-bars"}></i> */}
-
             {click ? (
               <span className="icon">
                 <HamburgerCloseIcon />

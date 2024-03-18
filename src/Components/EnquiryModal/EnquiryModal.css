@@ -1,0 +1,9 @@
+.modal{
+    width: 5%;
+   }
+
+@media (max-width: 800px){
+   .modal{
+    width: 5%;
+   }
+  }
