@@ -13,7 +13,7 @@ import { ReactComponent as    WhatsappIcon } from "../../Assets/whatsapp.svg";
 import "./LandingPage.css"
 
 const LandingPage = () => {
-  const whatsappNumber = "123456789";
+  const whatsappNumber = "+919993514123";
 
   const handleWhatsAppClick = () => {
     console.log("WhatsApp icon clicked!");
@@ -49,7 +49,7 @@ const LandingPage = () => {
         <Videos />
       </div>
       <div id="testimonial">
-        <Testimonials />
+        <Testimonials/>
       </div>
       <div id="contact">
         <ContactUs />
