@@ -3,7 +3,6 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Home from "../../Components/Home/Home";
 import Services from "../../Components/Services/Services";
 import AboutUs from "../../Components/AboutUs/AboutUs";
-import Videos from "../../Components/Videos/Videos";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import ContactUs from "../../Components/ContactUs/ContactUs";
 import Footer from "../../Components/Footer/Footer";
@@ -44,9 +43,6 @@ const LandingPage = () => {
       </div>
       <div id="gallery">
         <MainGallery />
-      </div>
-      <div id="videos">
-        <Videos />
       </div>
       <div id="testimonial">
         <Testimonials/>

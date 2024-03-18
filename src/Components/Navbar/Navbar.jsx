@@ -75,17 +75,6 @@ function NavBar() {
                 activeClassName="active"
                 className="nav-links"
                 onClick={() => {
-                  handleClick("videos");
-                }}
-              >
-                VIDEOS
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClassName="active"
-                className="nav-links"
-                onClick={() => {
                   handleClick("testimonial");
                 }}
               >
