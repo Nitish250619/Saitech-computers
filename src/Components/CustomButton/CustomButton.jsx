@@ -1,10 +1,11 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
 
-export default function CustomButton({ name }) { // Renamed to CustomButton
+export default function CustomButton({ name , handleOpen}) { // Renamed to CustomButton
   return (
     <div>
       <Button
+      onClick={handleOpen}
         variant="contained"
         sx={{
           color: '#f5b921', // Text color

@@ -1,0 +1,43 @@
+.flex-container {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .flex-container > div {
+    margin: 2%;
+    width: 100%;
+  }
+  .item2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+    font-size: 1.3em;
+    font-family: fira sans;
+    line-height: 22.8571px;
+  }
+  .heading {
+    font-size: 3em;
+    font-weight: 700;
+    font-family: Exo two;
+    line-height: 1.2;
+  }
+  .image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 3%;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+
+
+

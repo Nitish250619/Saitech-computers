@@ -12,8 +12,21 @@ import laptopAmcImage from "../../Assets/ServiceImage/7LaptopAMC.jpeg";
 import laptopAmcCorporateImage from "../../Assets/ServiceImage/8LaptopAMCforcorporate.jpeg";
 import keyboardMouseRepairImage from "../../Assets/ServiceImage/9Keyboardmouserepair.jpg";
 import networkingDevicesImage from "../../Assets/ServiceImage/10NetworkingDevices.jpg";
+import EnquiryModal from "../EnquiryModal/EnquiryModal";
 
 const Services = () => {
+  const [open , setOpen]=useState(false)
+  const handleClose = ()=> setOpen(false)
+
+  const [enquiryTitle , setEnquiryTitle]= useState("")
+
+
+  const handleOpen = (title)=>{
+    setOpen(true);
+    setEnquiryTitle(title)
+  }
+
+
   const [services, setServices] = useState([
     {
       id: 1,
@@ -94,10 +107,11 @@ const Services = () => {
         <Grid container spacing={2}>
           {services.map((service) => (
             <Grid item xs={7} sm={6} md={2.4} key={service.id}>
-              <ServiceCard service={service} />
+              <ServiceCard service={service}  handleOpen={handleOpen} />
             </Grid>
           ))}
         </Grid>
+        <EnquiryModal handleClose={handleClose} open={open} enquiryTitle={enquiryTitle} />
       </div>
     </div>
   );

@@ -3,13 +3,19 @@ import { motion } from 'framer-motion';
 import "./ServiceCard.css";
 import CustomButton from '../CustomButton/CustomButton';
 
-const ServiceCard = ({ service }) => {
+const ServiceCard = ({ service , handleOpen }) => {
   const { img, title, description } = service;
+
+  const handleClick = () => {
+    handleOpen(title)
+  }
 
   return (
     <div className='card-wrapper'>
+      <div className='maincard'>
       <img src={img} alt={title} />
       <motion.h5 
+        className='title'
         initial={{ opacity: 0, y: 90 }} 
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.5 }} 
@@ -25,7 +31,12 @@ const ServiceCard = ({ service }) => {
       >
         {description}
       </motion.p>
-      <CustomButton name="Enquire Now" /> 
+      </div>
+      
+      <div className='button'>
+      <CustomButton handleOpen={handleClick} name="Enquire Now"  /> 
+      </div>
+      
     </div>
   );
 };

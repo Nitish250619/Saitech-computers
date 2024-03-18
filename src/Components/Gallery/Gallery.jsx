@@ -1,44 +1,139 @@
-import React from "react";
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Image1 from "../../Assets/Gallery/1saitech-computers-rnt-road-indore-computer-peripheral-amc-jypz13h50f.jpg";
+import Image2 from "../../Assets/Gallery/2saitech-computers-rnt-road-indore-computer-peripheral-amc-sn3qc3hmxa.jpeg.jpg";
+import Image3 from "../../Assets/Gallery/3saitech-computers-rnt-road-indore-computer-peripheral-amc-ortt6ruz4w.jpg";
+import Image4 from "../../Assets/Gallery/4dfg-indore-g7ua5pezyc.jpg";
+import Image5 from "../../Assets/Gallery/5dfg-indore-1q8vqqxcca.jpg";
+import Image6 from "../../Assets/Gallery/6dfg-indore-flvuwbmrut.jpg";
+import Image7 from "../../Assets/Gallery/7saitech-computers-rnt-road-indore-computer-peripheral-amc-lydicu5fac.jpg";
+import Image8 from "../../Assets/Gallery/8abgs38931624AA3A862933725F1318_1667825406875.png";
+import Image9 from "../../Assets/Gallery/9A36D40D7EC5F7187A859C9959_1631875121543.jpg";
+import Image10 from "../../Assets/Gallery/10AFE23915FD07B929428279B7_1631875121387.jpg";
+import Image11 from "../../Assets/Gallery/11djs03870F3E48790294651CE1F835_1668056696264.jpg";
+import Image12 from "../../Assets/Gallery/12FF28222BEADDE363D9DBB1F491_1668056674556.jpg";
+import Image13 from "../../Assets/Gallery/13AE70A68BBA95DE44A13524ECCB_1668056655694.jpg";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import "./Gallery.css"
 
 const Gallery = () => {
+  
+  const slidesPerView = window.innerWidth >= 768 ? 4 : 1;
+
   return (
-    <div>
-      <h4>
-        Iron Man is a superhero appearing in American comic books published by
-        Marvel Comics. Co-created by writer and editor Stan Lee, developed by
-        scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby,
-        the character first appeared in Tales of Suspense #39 in 1963, and
-        received his own title with Iron Man #1 in 1968. Shortly after his
-        creation, Iron Man was a founding member of a superhero team, the
-        Avengers, with Thor, Ant-Man, Wasp and the Hulk. Iron Man stories,
-        individually and with the Avengers, have been published consistently
-        since the character's creation. Iron Man is the superhero persona of
-        Anthony Edward "Tony" Stark, a businessman and engineer who runs the
-        weapons manufacturer Stark Industries. When Stark is captured in a war
-        zone and sustains a serious heart wound, he builds his iconic Iron Man
-        armor out of scrap and escapes his captors. As a superhero, his armor
-        suits grant him superhuman strength, flight, energy projection, and
-        other abilities. The character was used to explore political themes, and
-        early Iron Man stories were set in the Cold War. Later stories explored
-        other themes, such as civil unrest, technological advancement, corporate
-        espionage, alcoholism, and governmental authority. Major Iron Man
-        stories include Demon in a Bottle (1979), Armor Wars (1987–1988),
-        Extremis (2005), and Iron Man 2020 (2020). He is also a leading
-        character in the company-wide stories Civil War (2006–2007), Dark Reign
-        (2008–2009), and Civil War II (2016). Iron Man's supporting cast has
-        produced additional superhero characters, including James Rhodes as War
-        Machine, Pepper Potts as Rescue, and Riri Williams as Ironheart as well
-        as reformed villains Black Widow and Hawkeye. Iron Man's list of enemies
-        includes his archenemy, the Mandarin, as well as many supervillains of
-        communist origin and many that double as business rivals for Tony.
-        Robert Downey Jr. portrayed Tony Stark in Iron Man (2008), the first
-        film of the Marvel Cinematic Universe, and continued to portray the
-        character until his final appearance in Avengers: Endgame (2019).
-        Downey's portrayal popularized the character, elevating Iron Man as one
-        of Marvel's most recognizable superheroes.
-      </h4>
+    <div className="swiper-container" style={{ maxHeight: '400px', maxWidth: '100%' ,}}>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        slidesPerView={slidesPerView}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image1}
+            alt="Slide 1"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image2}
+            alt="Slide 2"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image3}
+            alt="Slide 3"
+            className='image-style3'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image4}
+            alt="Slide 4"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image5}
+            alt="Slide 5"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image6}
+            alt="Slide 6"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image7}
+            alt="Slide 7"
+            className='image-style7'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image8}
+            alt="Slide 8"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image9}
+            alt="Slide 9"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image10}
+            alt="Slide 10"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image11}
+            alt="Slide 11"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image12}
+            alt="Slide 12"
+            className='image-style'
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide" >
+          <img
+            src={Image13}
+            alt="Slide 13"
+            className='image-style'
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
-};
+}
 
 export default Gallery;

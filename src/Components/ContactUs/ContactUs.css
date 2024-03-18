@@ -1,0 +1,127 @@
+.contact-us-container {
+  position: relative; /* Ensure proper positioning of the pseudo-element */
+  width: 92%;
+  height: 60vh;
+  margin: 50px auto;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /* Set background color with opacity */
+  text-align: center;
+}
+
+.contact-us-container::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Assets/ContactUs.jpg");
+  background-size: cover;
+  opacity: 0.1; /* Set opacity for the background image */
+  z-index: -1; /* Ensure the background image is behind other content */
+}
+
+.contact {
+  font-size: 2.5em;
+  font-family: fira sans;
+  color: #333333;
+}
+
+.contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2em;
+  font-family: exo "Times New Roman", Times, serif;
+  color: #333333;
+}
+
+.contact-information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 46vh;
+  width: 80%;
+  text-align: center;
+}
+
+.total-address {
+  height: 80%;
+  width: 45%;
+  /* background-color: aqua; */
+  font-family: exo "Times New Roman", Times, serif;
+  color: #333333;
+}
+
+.rest {
+  height: 80%;
+  width: 45%;
+  /* background-color: aqua; */
+  font-family: exo "Times New Roman", Times, serif;
+  color: #333333;
+}
+
+.office-address h4 {
+  font-size: 1.4rem;
+}
+.office-address p {
+  font-size: 1.5rem;
+}
+
+.call-us h4 {
+  font-size: 1.4rem;
+}
+.call-us p {
+  font-size: 1.4rem;
+}
+
+.general-enq h3 {
+  font-size: 1.4rem;
+}
+
+.general-enq p {
+  font-size: 1.3rem;
+}
+
+.our-timing h3 {
+  font-size: 1.4rem;
+}
+
+.our-timing p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 876px) {
+  .contact-information {
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+  }
+
+  .total-address {
+    margin-top: -15px;
+    height: 50%;
+    width: 100%;
+   
+  }
+
+  .rest {
+    margin-top: -15px;
+    height: 50%;
+    width: 100%;
+    
+  }
+
+  .hero h2{
+    font-size: 1.4rem;
+  }
+}

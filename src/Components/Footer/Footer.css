@@ -1,0 +1,128 @@
+.container-footer {
+    margin-top: -20px;
+    padding: 2em;
+    border-top: 0.8px solid black;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+   
+  }
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .useful-links{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .nav-section{
+    
+  }
+
+  .contact1{
+    text-align: left;
+  }
+
+  .connect{
+   
+    width: 12%;
+  }
+  .list {
+    list-style: none;
+   
+  }
+
+  .list-item{
+    
+    margin-left: -40px;
+    text-align: start;
+  }
+
+  .list-item a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #504949;
+    font-family: exe Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .useful-links h4{
+    margin-bottom: -1px;
+   
+  }
+
+  h4{
+    font-family: exe two;
+  }
+
+
+  .social-links{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-links a{
+    font-size: 1.6rem;
+    color: black;
+  }
+
+  .rights{
+    text-align: start;
+  }
+
+
+  @media (max-width: 1300px) {
+    .connect{
+        width: 15%;
+      }
+  }
+
+
+  @media (max-width: 867px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .connect{
+        width: 50%;
+        text-align: left;
+      }
+      .contact1{
+        width: 80%;
+        text-align: left;
+      }
+
+      .useful-links{
+        width: 80%;
+        text-align: left;
+      }
+    
+      .nav-section{
+        width: 80%;
+        text-align: left;
+      }
+
+      .rights{
+        text-align: center;
+      }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
