@@ -31,10 +31,10 @@
 
   @media (max-width: 800px){
     .slider-container {
-        width: 80vw;
+      width: 99vw !important;
       }
       .slider-content p {
-        font-size: 21px;
+        font-size: 1px;
       }
   }
 

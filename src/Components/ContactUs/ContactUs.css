@@ -1,5 +1,6 @@
-.conatct-wrapper{
- 
+.conatct-wrapper {
+  /* background-color: aqua; */
+  margin: 10px 0px;
 }
 
 .contact-us-container {
@@ -7,17 +8,12 @@
   width: 92%;
   height: 60vh;
   margin: 50px auto;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0
-  );
+  background-color: rgba(255, 255, 255, 0);
   text-align: center;
 }
 
 .contact-us-container::before {
-  content: ""; 
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -25,14 +21,15 @@
   height: 100%;
   background-image: url("../../Assets/ContactUs.jpg");
   background-size: cover;
-  opacity: 0.1; 
-  z-index: -1; 
+  opacity: 0.1;
+  z-index: -1;
 }
 
 .contact {
   font-size: 2.5em;
   font-family: fira sans;
   color: #333333;
+  margin-bottom: -50px;
 }
 
 .contact_container {
@@ -47,6 +44,7 @@
   font-size: 2em;
   font-family: exo "Times New Roman", Times, serif;
   color: #333333;
+  margin-bottom: -2px;
 }
 
 .contact-information {
@@ -102,45 +100,86 @@
   font-size: 1.3rem;
 }
 
+@media (max-width: 876px){
+  .conatct-wrapper {
+    height: 80% !important;
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 876px) {
+
+  .contact{
+   
+    margin-top: 30px;
+  }
+  .conatct-wrapper {
+    height: 80%;
+    margin-top: 50px;
+  }
+
   .contact-information {
     flex-direction: column;
-    height: 60vh;
+    height: 95%;
     width: 100%;
   }
 
   .total-address {
-    margin-top: -15px;
-    height: 50%;
+    margin-top: 5px;
+    height: 15%;
     width: 100%;
-   
+  }
+
+  .call-us h4 {
+    font-size: 1.3rem;
+  }
+  .call-us p {
+    font-size: 1.2rem;
   }
 
   .rest {
-    margin-top: -15px;
-    height: 50%;
+    margin-top: 10px;
+    height: 35%;
     width: 100%;
-    
+  }
+  .office-address p{
+    font-size: 1.3rem;
   }
 
-  .hero h2{
-    font-size: 1.4rem;
+  .hero h2 {
+    font-size: 1.2rem;
   }
+
+  .general-enq h3 {
+    font-size: 1.3rem;
+  }
+  
+  .general-enq p {
+    font-size: 1.2rem;
+  }
+  
+  .our-timing h3 {
+    font-size: 1.3rem;
+  }
+  
+  .our-timing p {
+    font-size: 1.2rem;
+  }
+
 }
 
-@media (max-width: 1300px){
-  .conatct-wrapper{
+@media (max-width: 1300px) {
+  .conatct-wrapper {
     height: 70vh;
-   margin-top: 20px;
+    margin-top: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
   }
 
   .contact {
     font-size: 2.2em;
-    
   }
-  .hero h2{
+  .hero h2 {
     font-size: 1.4rem;
   }
 }
