@@ -14,22 +14,22 @@ const ContactUs = () => {
             <div className="total-address">
               <div className="office-address">
                 <h4>Office Address</h4>
-                <p>area, city, landmark, pincode wegfiugfrigsfigfoiguefig</p>
+                <p>UG-12, Riddhi Siddhi Tower, RNT Marg, Kibe Compound, Indore, Madhya Pradesh 452001</p>
               </div>
               <div className="call-us">
-                <h4>call us</h4>
-                <p>++654654</p>
+                <h4>Call us</h4>
+                <p>09993514123</p>
               </div>
             </div>
 
             <div className="rest">
               <div className="general-enq">
                 <h3>General Enquiry</h3>
-                <p>++654654</p>
+                <p>09993514123</p>
               </div>
               <div className="our-timing">
-                <h3>our timing</h3>
-                <p>++654654</p>
+                <h3>Our timing</h3>
+                <p>10:30 am–7:30 pm</p>
               </div>
             </div>
           </div>

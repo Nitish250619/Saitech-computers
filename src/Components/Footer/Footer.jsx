@@ -58,8 +58,8 @@ const Footer = () => {
         </div>
         <div className="contact1">
           <h4>CONTACT</h4>
-          <p className="contacts2">6354528565</p>
-          <p className="contacts2">sample@gmail.com</p>
+          <p className="contacts2">09993514123</p>
+          <p className="contacts2">www.saitechcomputers.com</p>
         </div>
         <div className="connect">
           <h4>CONNECT</h4>
