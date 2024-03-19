@@ -54,8 +54,9 @@ const EnquiryModal = ({ open, handleClose, enquiryTitle }) => {
   };
 
   const handleContinue = () => {
-    // Add your logic here to handle the continue button action
-    console.log("Continue button clicked");
+    const whatsappNumber = "+919993514123";
+    const whatsappLink = `https://wa.me/${whatsappNumber}`;
+    window.open(whatsappLink, "_blank");
   };
 
   return (

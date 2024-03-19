@@ -1,0 +1,60 @@
+.PrivacyPolicy-wrapper{
+    /* background-color: aqua; */
+    margin: 20px 80px 60px;
+    text-align: left;
+}
+
+.PrivacyPolicy{
+    margin-bottom: 30px;
+}
+.p1{
+    margin-bottom: -12px;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: fari sans;
+}
+
+.p2{
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.p3{
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: fari sans;
+
+}
+
+ul li{
+    margin-bottom: 12px;
+}
+
+
+.list-ordered{
+    margin-top: 10px;
+    
+}
+
+
+@media (max-width: 768px){
+    .PrivacyPolicy-wrapper{
+        margin: 20px 20px 60px;      
+    }
+
+    .PrivacyPolicy-container{
+
+    }
+
+    .p1{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .p2{
+        font-size: 1.3em;
+        font-weight: 300;
+    
+    }
+}

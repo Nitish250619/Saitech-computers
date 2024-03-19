@@ -1,5 +1,5 @@
 .conatct-wrapper{
-  background-color: aqua;
+ 
 }
 
 .contact-us-container {
@@ -130,7 +130,17 @@
 
 @media (max-width: 1300px){
   .conatct-wrapper{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: 70vh;
+   margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .contact {
+    font-size: 2.2em;
+    
+  }
+  .hero h2{
+    font-size: 1.4rem;
   }
 }

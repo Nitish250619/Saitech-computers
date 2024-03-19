@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import "./Navbar.css";
+import "./Nav2.css";
 import { ReactComponent as HamburgerOpenIcon } from "../../Assets/Navlogo/HamburgerIcon.svg";
 import { ReactComponent as HamburgerCloseIcon } from "../../Assets/Navlogo/Close.svg";
 
@@ -28,12 +28,12 @@ function NavBar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <Link
-              
+              to={"/"}
                 activeClassName="active"
                 className="nav-links"
-                onClick={() => {
-                  handleClick("home");
-                }}
+                // onClick={() => {
+                //   handleClick("home");
+                // }}
               >
                 HOME
               </Link>
