@@ -1,18 +1,26 @@
-.landing-container{
-    position: relative;
+.landing-container {
+  position: relative;
+  /* overflow-x: hidden; */
 }
 
 .whatsapp-icon {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    bottom: 150px;
-    right: 30px;
-    z-index: 100; 
-    cursor: pointer;
-    transition: transform 0.3s ease; 
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 30px; 
+  right: 30px;
+  z-index: 100; 
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.2); 
+}
+
+@media screen and (max-width: 768px) {
+  .whatsapp-icon {
+      bottom: 30px; 
+      right: 30px;
   }
-  
-  .whatsapp-icon:hover {
-    transform: scale(1.2); 
-  }
+}

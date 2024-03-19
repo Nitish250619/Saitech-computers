@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import "./ServiceCard.css";
-import CustomButton from '../CustomButton/CustomButton';
+// import CustomButton from '../CustomButton/CustomButton';
 
 const ServiceCard = ({ service , handleOpen }) => {
   const { img, title, description } = service;
@@ -34,7 +34,7 @@ const ServiceCard = ({ service , handleOpen }) => {
       </div>
       
       <div className='button'>
-      <CustomButton handleOpen={handleClick} name="Enquire Now"  /> 
+      {/* <CustomButton handleOpen={handleClick} name="Enquire Now"  />  */}
       </div>
       
     </div>
