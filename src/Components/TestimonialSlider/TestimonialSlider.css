@@ -3,6 +3,7 @@
     margin: 0 auto;
     overflow: hidden;
     background-color: antiquewhite;
+    border-radius: 10px;
   }
   
   .slider-content {

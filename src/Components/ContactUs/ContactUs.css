@@ -1,5 +1,9 @@
+.conatct-wrapper{
+  background-color: aqua;
+}
+
 .contact-us-container {
-  position: relative; /* Ensure proper positioning of the pseudo-element */
+  position: relative;
   width: 92%;
   height: 60vh;
   margin: 50px auto;
@@ -8,12 +12,12 @@
     255,
     255,
     0
-  ); /* Set background color with opacity */
+  );
   text-align: center;
 }
 
 .contact-us-container::before {
-  content: ""; /* Required for pseudo-elements */
+  content: ""; 
   position: absolute;
   top: 0;
   left: 0;
@@ -21,8 +25,8 @@
   height: 100%;
   background-image: url("../../Assets/ContactUs.jpg");
   background-size: cover;
-  opacity: 0.1; /* Set opacity for the background image */
-  z-index: -1; /* Ensure the background image is behind other content */
+  opacity: 0.1; 
+  z-index: -1; 
 }
 
 .contact {
@@ -57,7 +61,6 @@
 .total-address {
   height: 80%;
   width: 45%;
-  /* background-color: aqua; */
   font-family: exo "Times New Roman", Times, serif;
   color: #333333;
 }
@@ -65,7 +68,6 @@
 .rest {
   height: 80%;
   width: 45%;
-  /* background-color: aqua; */
   font-family: exo "Times New Roman", Times, serif;
   color: #333333;
 }
@@ -123,5 +125,12 @@
 
   .hero h2{
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1300px){
+  .conatct-wrapper{
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
