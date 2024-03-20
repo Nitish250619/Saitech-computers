@@ -106,7 +106,7 @@ const Services = () => {
         <h1>Services</h1>
         <Grid container spacing={2}>
           {services.map((service) => (
-            <Grid item xs={7} sm={6} md={2.4} key={service.id}>
+            <Grid item xs={12} sm={6} md={3} key={service.id}>
               <ServiceCard service={service}  handleOpen={handleOpen} />
             </Grid>
           ))}

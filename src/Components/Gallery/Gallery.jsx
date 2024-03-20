@@ -21,7 +21,7 @@ import "./Gallery.css"
 
 const Gallery = () => {
   
-  const slidesPerView = window.innerWidth >= 768 ? 4 : 1;
+  const slidesPerView = window.innerWidth >= 768 ? 3 : 1;
 
   return (
     <div className="swiper-container" style={{ maxHeight: '400px', maxWidth: '100%' ,}}>

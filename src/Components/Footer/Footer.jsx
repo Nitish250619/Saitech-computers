@@ -58,8 +58,8 @@ const Footer = () => {
         </div>
         <div className="contact1">
           <h4>CONTACT</h4>
-          <p className="contacts2">09993514123</p>
-          <p className="contacts2">www.saitechcomputers.com</p>
+          <p className="contacts2"><a href="tel:(+91) 9993514123">(+91) 9993514123</a></p>
+          <p className="contacts2"><a href="https://www.saitechcomputers.com">www.saitechcomputers.com</a></p>
         </div>
         <div className="connect">
           <h4>CONNECT</h4>
@@ -73,7 +73,7 @@ const Footer = () => {
               <a href="#">
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
               </a>
-              <a href="">
+              <a href="#">
                 <FontAwesomeIcon icon={faYoutube} size="lg" />
               </a>
 
