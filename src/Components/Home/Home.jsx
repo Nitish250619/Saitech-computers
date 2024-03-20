@@ -26,7 +26,7 @@ const Home = () => {
                 backgroundColor: "#153b40", // Darken background color on hover
               },
               borderRadius: "10px", // Adjust the border radius
-              padding: "12px 24px", // Adjust the padding to increase the size
+              padding: "12px 24px", 
             }}
           >
             Enquiry nOW
